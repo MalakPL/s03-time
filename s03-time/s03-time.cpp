@@ -267,6 +267,7 @@ auto main() -> int
 
 #pragma region Zadanie: Sekundy do północy
 		wcout << L"[Zadanie: Sekundy do północy]" << endl;
+		wcout << L"Czas: " << Czas1.to_string() << endl;
 		wcout << L"Sekundy: " << Czas1.count_seconds() << endl;
 		wcout << L"Minuty: " << Czas1.count_minutes() << endl;
 		wcout << L"Czas do północy: " << Czas1.time_to_midnight().to_string() << endl << endl;
@@ -275,7 +276,7 @@ auto main() -> int
 	}
 	catch (exception ex)
 	{
-		wcerr << "Wyjatek: " << ex.what() << endl;
+		wcerr << "Wyjątek: " << ex.what() << endl;
 		return 1;
 	}
 
